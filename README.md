@@ -2,7 +2,7 @@
 ## 1.	Presentación del proyecto    
 ### 1.1	Visión global     
 El proyecto consiste en la implementación del prototipo de un sistema satelital como el mostrado en la figura. El sistema satelital se compone de dos elementos fundamentales: el satélite y la estación de tierra.    
-<img width="400" height="200" alt="Imagen2" src="https://github.com/user-attachments/assets/57b4adda-5e93-440f-9fca-23d3bc36a7c0" />
+<img width="400" height="300" alt="Imagen2" src="https://github.com/user-attachments/assets/57b4adda-5e93-440f-9fca-23d3bc36a7c0" />
 
 El satélite se encarga de captar datos del espacio, procesarlos y enviarlos periódicamente a la estación de tierra. También recibe órdenes de la estación de tierra que pueden modificar alguna de las tareas que realiza.    
    
