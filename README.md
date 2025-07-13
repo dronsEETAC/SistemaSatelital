@@ -2,13 +2,12 @@
 ## 1.	Presentación del proyecto    
 ### 1.1	Visión global     
 El proyecto consiste en la implementación del prototipo de un sistema satelital como el mostrado en la figura. El sistema satelital se compone de dos elementos fundamentales: el satélite y la estación de tierra.    
-<img width="1781" height="1113" alt="Imagen2" src="https://github.com/user-attachments/assets/57b4adda-5e93-440f-9fca-23d3bc36a7c0" />
+<img width="400" height="200" alt="Imagen2" src="https://github.com/user-attachments/assets/57b4adda-5e93-440f-9fca-23d3bc36a7c0" />
 
 El satélite se encarga de captar datos del espacio, procesarlos y enviarlos periódicamente a la estación de tierra. También recibe órdenes de la estación de tierra que pueden modificar alguna de las tareas que realiza.    
    
 La estación de tierra recibe los datos que le envía el satélite y se los muestra al usuario de la manera más clara posible a través de una interfaz gráfica amigable, desde la que el usuario también puede enviar órdenes al satélite.    
 
-<img src="https://github.com/user-attachments/assets/e323d51f-95e6-4069-9fa2-d090085aab35" width="400" height="200">      
 
 ### 1.2	 El satélite    
 El elemento principal del satélite es un microprocesador Arduino, que llamaremos controlador. El satélite también está equipado con sensores que permiten al controlador adquirir datos de humedad, temperatura y proximidad de objetos que pueden impactar contra el satélite. Además, dispone de sistemas mecánicos que le permiten cambiar la orientación de alguno de los sensores (por ejemplo, del sensor de proximidad).     
