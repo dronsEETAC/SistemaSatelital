@@ -639,7 +639,8 @@ La entrega debe realizarse en forma de nueva versión (con un TAG adecuado) del 
 * El código del Arduino satélite
 * El código del Arduino de tierra
 * El código de la interfaz gráfica
-* En una carpeta adicional: los códigos de los test unitarios que hayais preparado.   
+* En una carpeta adicional: los códigos de los test unitarios que hayais preparado.
+    
 En el README debe aparecer el enlace al vídeo de no más de 5 minutos que muestre el correcto funcionamiento de los elementos del sistema que son novedad en la versión 2 (y, por tanto, no se mostraron en el vídeo de la versión 1). También debe mostrar las partes del código implicadas en las nuevas funcionalidades. 
 
 ## 6. Versión 3
