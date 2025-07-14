@@ -207,8 +207,7 @@ El programa es fácil de entender. La función _millis()_ nos da el número de m
   
 Con esta estructura es muy fácil añadir más tareas periódicas a nuestro programa. Por ejemplo, probad a añadir un led verde que se encienda/apague cada 5 segundos.    
 
-AQUÍ ES INTERESANTE QUE EXPERIMENTEN EL PROBLEMA QUE SE PRODUCE CUANDO TIENEN EL PROGRAMA FUNCIONANDO UN RATO DE  MANERA QUE SE DESBORDAN LAS VARIABLES mextMillis, QUE SON DE TIPO int Y DEBERIAN SER DE TIPO unsigned long. AUNQUE INCLUSO EN ESE CASO, SI EL SATELITE VA A ESTAR FUNCIONANDO AÑOS, ACABARÁ DESBORDANDOSE.
-PUEDE SER INTERESANTE QUE OBSERVEN CUÁNTO TARDA EN DESBORDARSE UN INT, PREDECIR CUÁNTO TARDARÍA EN DESBORDARSE UN INSIGNED LONG Y CUAL SERÍA LA SOLUCIÓN DEFNITIVA AL PROBLEMA.    
+Mantened ahora el programa funcionando un rato. Pronto observaréis un comportamiento extraño (los leds se encenderán/apagarán a un ritmo imprevisto). ¿Podéis dar una explicación a lo que está pasando?
 
 ### Paso 3: Comunicación entre Arduino y el portátil
 La placa Arduino está conectada a un puerto USB de tu portátil. Esa es una comunicación serie que utiliza el protocolo UART (Universal Asynchronous Receiver/Transmitter). En el paso X aprenderás más sobre este protocolo, que también se usará para conectar por cable el arduino satélite con el arduino de tierra.  
