@@ -60,7 +60,7 @@ La última versión debe incluir todas las funcionalidades adicionales que elija
 En las fechas indicadas en la planificación de la asignatura, cada grupo debe entregar el código correspondiente a la versión que se entrega junto con un vídeo de no más de 3 minutos que muestre que el código satisface los requisitos de la versión que se está entregando.   
 
 ### 1.7	Entragas 
-En las fechas indicadas en la planificación de la asignatura, cada grupo debe entregar el código correspondiente a la versión que se entrega junto con un vídeo de no más de 3 minutos que muestre que el código satisface los requisitos de la versión que se está entregando. Las entregas se realizarán en forma de repositorio de GitHub que contenga el código y el enlace al vídeo, que debe estar accesible en internet (en Youtube o Google drive, por ejemplo).  
+En las fechas indicadas en la planificación de la asignatura, cada grupo debe entregar el código correspondiente a la versión que se entrega junto con un vídeo de no más de 5 minutos que muestre que el código satisface los requisitos de la versión que se está entregando. Las entregas se realizarán en forma de repositorio de GitHub que contenga el código y el enlace al vídeo, que debe estar accesible en internet (en Youtube o Google drive, por ejemplo).  
 
 GitHub y Git son herramientas muy usadas que permiten mantener información (por ejemplo, el código) disponible en la nube, accesible a todos los miembros del equipo y también al público en general (si el repositorio se hace público). Además, permite gestionar cómodamente diferentes versiones de un proyecto, que es justamente lo que se necesita en este proyecto.    
 
