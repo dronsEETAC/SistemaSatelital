@@ -600,7 +600,7 @@ Se desea, por tanto, que el usuario puede elegir dónde se hace el cálculo de v
 ### 5.3 Sensor de distancia
 El satélite debe estar dotado de un sistema que permita detectar la proximidad de objetos que puedan impactar con él. Para implementar este sistema usaremos el sensor ultrasónico HC-SR04.    
 
-Este sensor emite un sonido ultrasónico por uno de sus transductores y esperar que el sonido rebote de algún objeto presente. El eco es captado por el segundo transductor. La distancia es proporcional al tiempo que tarda en llegar el eco. Os resultara muy fácil encontrar información sobre cómo conectar el sensor al Arduino satélite y cómo capturar por programa los valores que proporciona.   
+Este sensor emite un sonido ultrasónico por uno de sus transductores que impacta en los objetos que encuentre por el camino y rebota, generando un efecto eco. El eco es captado por el segundo transductor. La distancia es proporcional al tiempo que tarda en llegar el eco. Os resultara muy fácil encontrar información sobre cómo conectar el sensor al Arduino satélite y cómo capturar por programa los valores que proporciona.   
 
 Naturalmente el sensor emite el sonido en la dirección en la que está orientado. Para que el sistema sea operativo es necesario que esa orientación pueda cambiar para detectar la proximidad de objetos peligrosos en cualquier dirección. Para conseguir esto montaremos el sensor de ultrasonidos en un servo motor que podemos hacer girar a voluntad por programa. Idealmente, el programa del Arduino satelite hará girar el servo motor de manera constante para conseguir un barrido de toda la zona y captar así la proximidad de objetos en toda la zona barrida. Los datos captados se enviarán a tierra para que puedan mostrarse al usuario.   
 
