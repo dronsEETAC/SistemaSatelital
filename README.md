@@ -878,9 +878,12 @@ No te va a resultar difícil porque en vuestro sistema los mensajes que intercam
 Solo hay un punto que ha quedado en el aire. ¿Cómo está segura, por ejemplo, la estación de tierra, de que la clave pública que le han dado es realmente de su satélite y no de un satélite espía? En otras palabras, ¿dónde está la autoridad certificadora en este caso (la que haga el papel que hizo Correos en el caso de la historia de Juan y Maria)? En este caso, la autoridad certificadora podría ser los profesores de la asignatura. Ellos serían los que proporcionarían los juegos de claves públicas y privadas, asegurándose de que entregan esas claves a las personas que son quienes dicen que son. Naturalmente, a los profesores les costaría medio segundo hacer ese programa para generar las claves. No obstante, vamos a obviar ese paso, porque vuestros profesores están muy ocupados revisando las entregas del curso. A menos que estéis dispuestos a pagarles 100 euros por ese servicio, como hicieron María y Juan con Correos. En ese caso, quizá vuestros profesores estén dispuestos a hablar del tema.
 
 ### 7.3 Graficos de posición más realistas
-ESTA POR HACER
+ESTA POR HACER    
 
-### 7.4 Calificación    
+### 7.4 Entrega    
+La entrega se realiza como versión final del repositorio del proyecto del grupo, en las mismas condiciones que las versiones anteriores. No obstante, en esta ocasión el vídeo puede durar algo más de tiempo y debe estar pensado para impresionar a una audiencia más general (no solo a los profesores). Por tanto, es una ocasión para mostrar en ese vídeo capacidades comunicativas y creativas, que también se tendrán en cuenta para determinar la calificación del proyecto.    
+   
+### 7.5 Calificación    
 La versión final si que tiene una calificación (la misma para todos los miembros del equipo) que se determinará a partir de los criterios siguientes:    
    
 | Criterio  | Descripción | Peso |
