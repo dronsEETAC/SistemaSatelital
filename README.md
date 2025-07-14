@@ -566,7 +566,7 @@ Los mensajes que empiezan con código "1" contienen un dato de temperatura (35,5
 
 Naturalmente, la estación de tierra que recibirá el mensaje tendrá que usar la función _split_ para trocear el mensaje y determinar el tipo de mensaje recibido a partir del primero de los trozos obtenidos.   
 
-De manera similar es necesario fijar el formato de los mensajes que viajan de la estación de tierra al satélite. Podríamos tener por ejemplo:
+De manera similar es necesario fijar el formato de los mensajes que viajan de la estación de tierra al satélite. Podríamos tener por ejemplo:    
 "1:5"    
 "2:90"    
 "3:"    
