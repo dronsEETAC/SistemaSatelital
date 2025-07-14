@@ -634,14 +634,13 @@ La lista siguiente es un resumen de lo que debería estar funcionando en la vers
 14. Se han añadido comentarios clarificadores. En particular, hay comentarios que describen claramente el protocolo de aplicación. Cada función tiene un comentario que describe lo que hace, qué parámetros tiene y qué resultado produce.
 15. Se ha implementado correctamente una cola circular para facilitar el cálculo de la media de los últimos 10 valores de temperatura.
 
-La entrega de la versión 2 tiene dos partes. Por una parte debe entregarse un fichero comprimido con los códigos, que debe incluir:   
+La entrega debe realizarse en forma de nueva versión (con un TAG adecuado) del proyecto en el repositorio GitHub del grupo. En el repositorio deben incluirse:   
 
 * El código del Arduino satélite
 * El código del Arduino de tierra
 * El código de la interfaz gráfica
 * En una carpeta adicional: los códigos de los test unitarios que hayais preparado.   
-
-Por otra parte debe entregarse un vídeo de no más de 5 minutos que muestre el correcto funcionamiento de los elementos del sistema que son novedad en la versión 2 (y, por tanto, no se mostraron en el vídeo de la versión 1). También debe mostrar las partes del código implicadas en las nuevas funcionalidades. 
+En el README debe aparecer el enlace al vídeo de no más de 5 minutos que muestre el correcto funcionamiento de los elementos del sistema que son novedad en la versión 2 (y, por tanto, no se mostraron en el vídeo de la versión 1). También debe mostrar las partes del código implicadas en las nuevas funcionalidades. 
 
 ## 6. Versión 3
 Las novedades principales de la versión 3 son: un sistema de detección de errores en la comunicación, el envío por parte del satélite de datos sobre su posición que se mostrarán en una gráfica apropiada, la implementación de un sistema de comunicación inalámbrica entre el satélite y la estación de tierra y la implementación de un sistema de registro de eventos.    
