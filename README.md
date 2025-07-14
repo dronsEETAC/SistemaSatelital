@@ -537,16 +537,18 @@ Llegados a este punto ya podemos dar por concluida la versión 1 del proyecto. L
 
 En el caso de que cada miembro del grupo haya desarrollado su propia versión 1 del proyecto, es el momento de ponerse de acuerdo en cuál será el código con el que trabajará a partir de ahora todo el grupo para desarrollar las versiones siguientes.   
 
-La entrega de la versión 1 tiene dos partes. Por una parte debe entregarse un fichero comprimido con los códigos, que debe incluir:   
+La versión 1 (igual que las siguientes) debe entregarse en forma de repositorio de GitHub que incluya los códigos siguientes:
 
 * El código del Arduino satélite
 * El código del Arduino de tierra
 * El código de la interfaz gráfica
 * En una carpeta adicional: los códigos de los test unitarios que hayais preparado.   
 
-Por otra parte debe entregarse un vídeo de no más de 5 minutos que muestre el correcto funcionamiento del sistema (es decir, todo lo que indica la tabla anterior) y además muestre las partes más relevantes de los tres códigos, con énfasis especial en los códigos que no han sido producto de cortar de esta guía y pegar (por ejemplo, los códigos para incrustar la gráfica en la interfaz gráfica o para implementar las alarmas). Para mostrar el sistema en funcionamiento probablemente tendréis que hacer un vídeo compuesto por una captura de escritorio en la que se vea la aplicación en funcionamiento y otro vídeo sincronizado con este en el que vea el hardware en acción. La forma en entregar el vídeo es colocar la url (de youtube o google drive) correspondiente en el campo Observaciones de la tarea en la que se ha entregado el código.
+Además, en el README del repositorio debe contener el enlace a un vídeo de no más de 5 minutos que muestre el correcto funcionamiento del sistema (es decir, todo lo que indica la tabla anterior) y además muestre las partes más relevantes de los tres códigos, con énfasis especial en los códigos que no han sido producto de cortar de esta guía y pegar (por ejemplo, los códigos para incrustar la gráfica en la interfaz gráfica o para implementar las alarmas). Para mostrar el sistema en funcionamiento probablemente tendréis que hacer un vídeo compuesto por una captura de escritorio en la que se vea la aplicación en funcionamiento y otro vídeo sincronizado con este en el que vea el hardware en acción.   
 
-HACEMOS QUE MANTENGAN UN REPOSITORIO EN GITHUB CON LAS DIFERENTES VERSIONES DEL PROYECTO Y QUE NOS VAYAN ENTREGANDO LA URL?
+Esta versión debe tener un TAG apropiado indicando que se trata de la versión 1. En enlace al repositorio de GitHub con la versión 1 debe colocarse en el campo de observaciones de la entrega correspondiente. Es suficiente con que esta operación la haga uno de los miembros del grupo.
+
+
  
 ## 5. Versión 2
 En la versión 2 vamos a incorporar al sistema un sensor de distancia que nos permitirá detectar la proximidad al satélite de objetos que puedan impactar con él. Además, añadiremos algo de computación para cálculo de medias de temperaturas.   
