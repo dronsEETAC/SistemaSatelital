@@ -50,8 +50,6 @@ Adicionalmente, el sensor de ultrasonidos puede estar montado sobre una platafor
 <ins>Versión 3</ins>    
    
 El satélite dispone de un mecanismo que le permite obtener la posición exacta en la que se encuentra dentro de la órbita que recorre. El controlador enviará a tierra esa información periódicamente, junto a los datos ya descritos en las versiones anteriores.   
-   
-El controlador guarda en ficheros algunos datos de manera que puedan ser recuperados cuando los solicite la estación de tierra.  
     
 La estación de tierra muestra al usuario la posición del satélite en cada momento, usando los mapas más adecuados. Además, también guarda en ficheros los datos recibidos y los recupera a petición del usuario. Todo ello debe poder gestionarse de forma cómoda desde la interfaz gráfica de la estación de tierra.   
    
@@ -60,8 +58,17 @@ La estación de tierra muestra al usuario la posición del satélite en cada mom
 La última versión debe incluir todas las funcionalidades adicionales que elija el equipo, en función de su motivación y tiempo disponible. Naturalmente, se esperan funcionalidades espectaculares y sorprendentes.   
    
 En las fechas indicadas en la planificación de la asignatura, cada grupo debe entregar el código correspondiente a la versión que se entrega junto con un vídeo de no más de 3 minutos que muestre que el código satisface los requisitos de la versión que se está entregando.   
+
+### 1.7	Entragas 
+En las fechas indicadas en la planificación de la asignatura, cada grupo debe entregar el código correspondiente a la versión que se entrega junto con un vídeo de no más de 3 minutos que muestre que el código satisface los requisitos de la versión que se está entregando. Las entregas se realizarán en forma de repositorio de GitHub que contenga el código y el enlace al vídeo, que debe estar accesible en internet (en Youtube o Google drive, por ejemplo).  
+
+GitHub y Git son herramientas muy usadas que permiten mantener información (por ejemplo, el código) disponible en la nube, accesible a todos los miembros del equipo y también al público en general (si el repositorio se hace público). Además, permite gestionar cómodamente diferentes versiones de un proyecto, que es justamente lo que se necesita en este proyecto.    
+
+En este vídeo puede encontrarse una explicación de lo esencial para trabajar con Git y GitHub en este proyecto.  
+
+   XXXXXXXXXXXXXXXXXXXXXXXXX
    
-### 1.7	Calificación    
+### 1.8	Calificación    
 
 La calificación del proyecto tiene un peso del 40% en la nota final de la asignatura. Esa calificación se obtiene de la siguiente forma:  
 
