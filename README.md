@@ -711,14 +711,14 @@ La lista siguiente es un resumen de lo que debería estar funcionando en la vers
 19. Se han añadido comentarios clarificadores. En particular, hay comentarios que describen claramente el protocolo de aplicación. Cada función tiene un comentario que describe lo que hace, qué parámetros tiene y qué resultado produce.
 20. Se ha implementado correctamente una cola circular para facilitar el cálculo de la media de los últimos 10 valores de temperatura.
 
-Como en los casos anteriores, la entrega de la versión 3 tiene dos partes. Por una parte debe entregarse un fichero comprimido con los códigos, que debe incluir:   
+Como en los casos anteriores, la entrega de se realizará en forma de nueva versión (con el TAG adecuado) del repositorio GitHub, conteniendo los códigos que se indican a continuación:   
 
 * El código del Arduino satélite
 * El código del Arduino de tierra
 * El código de la interfaz gráfica
 * En una carpeta adicional: los códigos de los test unitarios que hayais preparado.   
 
-Por otra parte debe entregarse un vídeo de no más de 5 minutos que muestre el correcto funcionamiento de los elementos del sistema que son novedad en la versión 3 (y, por tanto, no se mostraron en el vídeo de la versión 2). También debe mostrar las partes del código implicadas en las nuevas funcionalidades. 
+y el vídeo de no más de 5 minutos que muestre el correcto funcionamiento de los elementos del sistema que son novedad en la versión 3 (y, por tanto, no se mostraron en el vídeo de la versión 2). El vídeo también debe mostrar las partes del código implicadas en las nuevas funcionalidades. 
 
 
 ## 7. Versión 4 (final)
