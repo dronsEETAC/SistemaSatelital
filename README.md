@@ -210,7 +210,7 @@ Con esta estructura es muy fácil añadir más tareas periódicas a nuestro prog
 Mantened ahora el programa funcionando un rato. Pronto observaréis un comportamiento extraño (los leds se encenderán/apagarán a un ritmo imprevisto). ¿Podéis dar una explicación a lo que está pasando?
 
 ### Paso 3: Comunicación entre Arduino y el portátil
-La placa Arduino está conectada a un puerto USB de tu portátil. Esa es una comunicación serie que utiliza el protocolo UART (Universal Asynchronous Receiver/Transmitter). En el paso X aprenderás más sobre este protocolo, que también se usará para conectar por cable el arduino satélite con el arduino de tierra.  
+La placa Arduino está conectada a un puerto USB de tu portátil. Esa es una comunicación serie que utiliza el protocolo UART (Universal Asynchronous Receiver/Transmitter). En el paso 6 aprenderás más sobre este protocolo, que también se usará para conectar por cable el arduino satélite con el arduino de tierra.  
   
 Esta comunicación serie por cable entre el portátil y la placa Arduino ya se ha estado usando para que el IDE que se ejecuta en tu portátil pueda enviar el código compilado de tu programa a la placa, donde se va a ejecutar. Ahora vamos a aprender a usar ese mismo canal de comunicación para que el programa que se ejecuta en la placa pueda enviar mensajes al IDE de manera que éste pueda mostrarlos al usuario.    
    
@@ -337,7 +337,7 @@ El receptor también va a usar la libreria _SoftwareSerial_. Crea el canal _mySe
  
 La función _mySerial.available()_ indica si se han recibido nuevos bytes por el canal serie. En caso afirmativo se leen todos los bytes hasta el carácter de fin de línea, usando la función _mySerial.readString()_.
 
-Puesto que queremos que la frase recibida se pueda ver el monitor serie del IDE conectado al arduino receptor, el programa usa también el canal _Serial_, tal y como se vio en el paso 3. Fíjate que para escribir en el monitor serie la frase recibida el programa receptor usa la función _Serial.print(data)_ y no _Serial.println(data)_, que es lo que cabría esperar. ¿Por qué?.   
+Puesto que queremos que la frase recibida se pueda ver en el monitor serie del IDE conectado al arduino receptor, el programa usa también el canal _Serial_, tal y como se vio en el paso 3. Fíjate que para escribir en el monitor serie la frase recibida el programa receptor usa la función _Serial.print(data)_ y no _Serial.println(data)_, que es lo que cabría esperar. ¿Por qué?.   
 
 Llegados a este punto, es fácil añadir a los programas del transmisor y del receptor el código necesario para que haya comunicación en ambos sentidos. Por ejemplo, el receptor puede enviar una frase de agradecimiento al transmisor cada vez que recibe un nuevo mensaje. Naturalmente, el transmisor enviará la frase recibida al monitor serie del IDE correspondiente. 
 Preparad esos códigos y probadlos. El resultado puede ser vuestro segundo test unitario que os permitirá verificar, en caso de necesidad, que la comunicación entre los arduinos funciona correctamente. Como es lógico, ahora no tiene sentido hablar de un arduino transmisor y otro receptor puesto que ambos transmiten y reciben.   
