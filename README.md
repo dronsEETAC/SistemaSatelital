@@ -370,8 +370,6 @@ En esta pequeña colección de vídeos encontraras ejemplos que te permitirán p
     
 [![](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D2vJmK9jgH4I)](https://www.youtube.com/list=PLj_C4NVXL2ShKV2RqoxJiuFUNpfDq-DB2)
 
-[![](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DPLj_C4NVXL2ShKV2RqoxJiuFUNpfDq-DB2)](https://www.youtube.com/watch?v=PLj_C4NVXL2ShKV2RqoxJiuFUNpfDq-DB2)
-
  
 ### Paso 8: Presentar los datos de temperatura y humedad al usuario
 Tenemos ya encima de la mesa todos los elementos necesarios para construir un sistema en el que el Arduino satélite capte los datos de temperatura y humedad y los envíe a tierra (por cable) cada 3 segundos, de manera que esos datos aparezcan en la consola del programa en Python para que pueda verlos el usuario. Además, el Arduino satélite debe tener un led verde que se encienda durante un breve instante cada vez que se envían datos y el Arduino de tierra también un led verde que se enciende cada vez que recibe nuevos datos.    
