@@ -365,6 +365,10 @@ Para que este programa funcione es necesario instalar en el intérprete de Pytho
 Muy probablemente, al ejecutar el programa se producirá un error porque el programa no puede usar el puerto serie específicado. Eso se produce en el caso de que en ese momento esté activo el monitor serie del IDE conectado al Arduino receptor. Puesto que el puerto serie está ocupado por el monitor serie, el programa en Python no puede usarlo. El problema se resuelve cerrando el monitor serie, con lo cual el puerto serie queda libre para que pueda ser usado por el programa Python.    
  
 Quizá ahora es buena idea añadir algo más de código al test unitario de comunicaciones para verificar también que los datos llegan correctamente al programa e Python.   
+
+En esta pequeña colección de vídeos encontraras ejemplos que te permitirán profundizar un poco más en el tema de la comunicación serie entre los diferentes elementos del sistema.   
+[![](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DPLj_C4NVXL2ShKV2RqoxJiuFUNpfDq-DB2)](https://www.youtube.com/watch?v=PLj_C4NVXL2ShKV2RqoxJiuFUNpfDq-DB2)
+
  
 ### Paso 8: Presentar los datos de temperatura y humedad al usuario
 Tenemos ya encima de la mesa todos los elementos necesarios para construir un sistema en el que el Arduino satélite capte los datos de temperatura y humedad y los envíe a tierra (por cable) cada 3 segundos, de manera que esos datos aparezcan en la consola del programa en Python para que pueda verlos el usuario. Además, el Arduino satélite debe tener un led verde que se encienda durante un breve instante cada vez que se envían datos y el Arduino de tierra también un led verde que se enciende cada vez que recibe nuevos datos.    
