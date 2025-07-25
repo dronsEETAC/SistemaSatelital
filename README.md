@@ -367,7 +367,8 @@ Muy probablemente, al ejecutar el programa se producirá un error porque el prog
 Quizá ahora es buena idea añadir algo más de código al test unitario de comunicaciones para verificar también que los datos llegan correctamente al programa e Python.   
 
 En esta pequeña colección de vídeos encontraras ejemplos que te permitirán profundizar un poco más en el tema de la comunicación serie entre los diferentes elementos del sistema.   
-[![](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D_fIoPHwnay0)](https://www.youtube.com/watch?v=_fIoPHwnay0)
+    
+[![](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D_fIoPHwnay0)](https://www.youtube.com/list=PLj_C4NVXL2ShKV2RqoxJiuFUNpfDq-DB2)
 
 [![](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DPLj_C4NVXL2ShKV2RqoxJiuFUNpfDq-DB2)](https://www.youtube.com/watch?v=PLj_C4NVXL2ShKV2RqoxJiuFUNpfDq-DB2)
 
