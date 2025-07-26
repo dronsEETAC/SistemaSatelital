@@ -618,9 +618,15 @@ Debe incluirse el código necesario para detectar el fallo en el funcionamiento 
 Finalmente, resultará muy útil tener un nuevo test unitario que nos permita verificar el correcto funcionamiento del sensor de distancia.
 
 ### 5.4 Modificación de los periodos de transmisión
-Para completar la versión 2 se desea que desde la interfaz gráfica se pueda cambiar el periodo de transmisión de los datos de temperatura/humedad/medidas. También se desea poder parar/reanudar la transmisión los datos de distancia y modificar su periodo de transmisión.   
+Para completar la versión 2 se desea que desde la interfaz gráfica se pueda cambiar el periodo de transmisión de los datos de temperatura/humedad/medidas. También se desea poder parar/reanudar la transmisión los datos de distancia y modificar su periodo de transmisión.     
 
-### 5.5 Entrega de la versión 2   
+### 5.5 Repaso de la organización del código    
+A estas alturas del proyeto se han desarrollado ya varios bloques de código que probablemente funcionan bien por separado. Pero poner todo junto de manera armniosa y bien organizada no es trivial. es frencuente tener dificultades con esta cuestión. Los vídeos siguientes pueden resultar de ayuda para resolver bien esta cuestión.    
+
+[![](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dgq2KujC6cDA)](https://www.youtube.com/playlist?list=PL64O0POFYjHojLZ-kpEXr9IeXXWZQ-h5H)
+
+
+### 5.6 Entrega de la versión 2   
 La lista siguiente es un resumen de lo que debería estar funcionando en la versión 2.
  
 1. El controlador capta correctamente los datos de humedad, temperatura y distancia.
