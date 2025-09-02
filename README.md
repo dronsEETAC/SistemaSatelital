@@ -64,9 +64,12 @@ En las fechas indicadas en la planificación de la asignatura, cada grupo debe e
 
 GitHub y Git son herramientas muy usadas que permiten mantener información (por ejemplo, el código) disponible en la nube, accesible a todos los miembros del equipo y también al público en general (si el repositorio se hace público). Además, permite gestionar cómodamente diferentes versiones de un proyecto, que es justamente lo que se necesita en este proyecto.    
 
-En este vídeo puede encontrarse una explicación de lo esencial para trabajar con Git y GitHub en este proyecto.  
+En este vídeo puede encontrarse una explicación de lo esencial para trabajar con Git y GitHub en este proyecto.   
 
-   XXXXXXXXXXXXXXXXXXXXXXXXX
+[![](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DI_fQlby426k)](https://www.youtube.com/playlist?list=PLj_C4NVXL2Sgq1N5G1MGbSjsXUIVGZ4S3)
+
+  https://www.youtube.com/playlist?list=PLj_C4NVXL2Sgq1N5G1MGbSjsXUIVGZ4S3
+  https://youtu.be/I_fQlby426k?list=PLj_C4NVXL2Sgq1N5G1MGbSjsXUIVGZ4S3
    
 ### 1.8	Calificación    
 
