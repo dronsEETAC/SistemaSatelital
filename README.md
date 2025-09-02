@@ -68,8 +68,6 @@ En este vídeo puede encontrarse una explicación de lo esencial para trabajar c
 
 [![](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DI_fQlby426k)](https://www.youtube.com/playlist?list=PLj_C4NVXL2Sgq1N5G1MGbSjsXUIVGZ4S3)
 
-  https://www.youtube.com/playlist?list=PLj_C4NVXL2Sgq1N5G1MGbSjsXUIVGZ4S3
-  https://youtu.be/I_fQlby426k?list=PLj_C4NVXL2Sgq1N5G1MGbSjsXUIVGZ4S3
    
 ### 1.8	Calificación    
 
