@@ -360,7 +360,9 @@ while True:
 ```
 El programa identifica el puerto serie que debe usarse (el mismo COM al que está conectado el Arduino receptor). Después configura el canal de comunicación serie, con la velocidad adecuada. Luego entra en un bucle infinito en el que pregunta si se han recibido datos y en caso afirmativo lee toda la frase recibida y la escribe en consola. La lógica del programa es la misma que la del programa que ejecuta el Arduino receptor que se ha visto en el paso anterior.    
  
-Para que este programa funcione es necesario instalar en el intérprete de Python la librería _myserial_.   
+Para que este programa funcione es necesario instalar en el intérprete de Python la librería _myserial_. Esta operación puede resultar problemática. Este vídeo explica brevemente cómo hacerlo y como resolver alguno de los problemas que pueden surgir.    
+
+[![](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdcXdksgJIig)](https://www.youtube.com/watch?v=dcXdksgJIig)
  
 Muy probablemente, al ejecutar el programa se producirá un error porque el programa no puede usar el puerto serie específicado. Eso se produce en el caso de que en ese momento esté activo el monitor serie del IDE conectado al Arduino receptor. Puesto que el puerto serie está ocupado por el monitor serie, el programa en Python no puede usarlo. El problema se resuelve cerrando el monitor serie, con lo cual el puerto serie queda libre para que pueda ser usado por el programa Python.    
  
