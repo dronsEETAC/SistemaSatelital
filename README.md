@@ -907,6 +907,6 @@ La versión final si que tiene una calificación (la misma para todos los miembr
 | Organizado y documentado	 |El código del controlador y de la estación de tierra está bien organizado en funciones. Además, se han añadido comentarios adecuados que deben permitir a otras personas, con poco esfuerzo, entender el código y hacer modificaciones si son necesarias	  |10% |
 | Eficiente |El código usa siempre los algoritmos más adecuados para realizar las operaciones  |5% |
 | Sorprendente |Las funcionalidades adicionales son interesantes, complejas y sorprendentes.	  |20% |
-| Bien presentado	 |El vídeo que acompaña a la versión final presenta claramente el funcionamiento del sistema y resulta espectacular  |10% |
+| Bien presentado	 |El vídeo que acompaña a la versión final presenta claramente el funcionamiento del sistema y resulta espectacular. El proyecto está bien presentado en el GitHub con información del equipo, una breve descripción de lo que hay en cada una de las 4versiones y el enlace al vídeo de cada una de ellas.  |10% |
 | TOTAL |  |100% |
 
