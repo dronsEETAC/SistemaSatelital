@@ -874,7 +874,7 @@ Para ejecutar este código necesitamos tener instalado Python y las librerias py
 
 *IMPORTANTE:* Para que este código funcione, necesitamos tener la Arduino conectada al ordenador mediante un cable USB y que el puerto serie sea el mismo que se ha especificado en el código. Recordad que si tenemos abierto el monitor serie de Arduino, NO podremos acceder al puerto serie desde Python, y el programa fallara. Esto es así que Windows solo permite un programa a la vez acceder al puerto serie. Con ocultar la ventana del monitor serie es suficiente para que Python pueda acceder al puerto serie.
 
-
+![orbit](orbit.png)
 
 ### 6.3 Comunicación inalámbrica
 En las versiones anteriores la comunicación entre el Arduino satélite y el Arduino tierra se ha hecho, por comodidad, por cable, usando el protocolo UART de comunicación serie. Pero como es lógico, en el sistema final la comunicación debe realizarse de forma inalambrica. En esta versión 3 vamos a experimentar ya con esta comunicación inalambrica, para lo cual usaremos la tecnología LoRa (Long Range) que está diseñado para comunicaciones a gran distancia y con poco consumo de energía que es justo lo que necesitamos para la comunicación con satélites. En el proyecto usaremos el kit LoRa que usa el chip SX1276 (hay otros modelos cuyo funcionamiento puede ser diferente).   
@@ -1097,7 +1097,20 @@ No te va a resultar difícil porque en vuestro sistema los mensajes que intercam
 Solo hay un punto que ha quedado en el aire. ¿Cómo está segura, por ejemplo, la estación de tierra, de que la clave pública que le han dado es realmente de su satélite y no de un satélite espía? En otras palabras, ¿dónde está la autoridad certificadora en este caso (la que haga el papel que hizo Correos en el caso de la historia de Juan y Maria)? En este caso, la autoridad certificadora podría ser los profesores de la asignatura. Ellos serían los que proporcionarían los juegos de claves públicas y privadas, asegurándose de que entregan esas claves a las personas que son quienes dicen que son. Naturalmente, a los profesores les costaría medio segundo hacer ese programa para generar las claves. No obstante, vamos a obviar ese paso, porque vuestros profesores están muy ocupados revisando las entregas del curso. A menos que estéis dispuestos a pagarles 100 euros por ese servicio, como hicieron María y Juan con Correos. En ese caso, quizá vuestros profesores estén dispuestos a hablar del tema.
 
 ### 7.3 Graficos de posición más realistas
-ESTA POR HACER    
+
+Una vez nos funcione la visualización de la orbita en python, este ofrece muchas posibilidades para visualizar las orbital de formas más realistas. Os mostramos dos posibilidades pero seguro que sois capaces de imaginar otras.
+
+#### Orbitas en 3D
+
+Una posible visualización seria en 3d añadiendo una esfera que represente la tierra.
+
+![orbit3d](orbit3d.png)
+
+#### Orbitas sobre un mapa
+
+Otra posible visualización seria sobre un mapa de forma que vemos en que posicion sobre el esta ahora mismo el satelite.
+
+![map](map.png)
 
 ### 7.4 Entrega    
 La entrega se realiza como versión final del repositorio del proyecto del grupo, en las mismas condiciones que las versiones anteriores. No obstante, en esta ocasión el vídeo puede durar algo más de tiempo y debe estar pensado para impresionar a una audiencia más general (no solo a los profesores). Por tanto, es una ocasión para mostrar en ese vídeo capacidades comunicativas y creativas, que también se tendrán en cuenta para determinar la calificación del proyecto.    
