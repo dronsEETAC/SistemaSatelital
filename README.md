@@ -2,12 +2,12 @@
 ## 1.	Presentación del proyecto    
 ### 1.1	Visión global     
 El proyecto consiste en la implementación del prototipo de un sistema satelital como el mostrado en la figura. El sistema satelital se compone de dos elementos fundamentales: el satélite y la estación de tierra.    
-   
+<img width="400" height="300" alt="Imagen2" src="https://github.com/user-attachments/assets/57b4adda-5e93-440f-9fca-23d3bc36a7c0" />
+
 El satélite se encarga de captar datos del espacio, procesarlos y enviarlos periódicamente a la estación de tierra. También recibe órdenes de la estación de tierra que pueden modificar alguna de las tareas que realiza.    
    
 La estación de tierra recibe los datos que le envía el satélite y se los muestra al usuario de la manera más clara posible a través de una interfaz gráfica amigable, desde la que el usuario también puede enviar órdenes al satélite.    
 
-<img src="https://github.com/user-attachments/assets/e323d51f-95e6-4069-9fa2-d090085aab35" width="400" height="200">      
 
 ### 1.2	 El satélite    
 El elemento principal del satélite es un microprocesador Arduino, que llamaremos controlador. El satélite también está equipado con sensores que permiten al controlador adquirir datos de humedad, temperatura y proximidad de objetos que pueden impactar contra el satélite. Además, dispone de sistemas mecánicos que le permiten cambiar la orientación de alguno de los sensores (por ejemplo, del sensor de proximidad).     
@@ -50,8 +50,6 @@ Adicionalmente, el sensor de ultrasonidos puede estar montado sobre una platafor
 <ins>Versión 3</ins>    
    
 El satélite dispone de un mecanismo que le permite obtener la posición exacta en la que se encuentra dentro de la órbita que recorre. El controlador enviará a tierra esa información periódicamente, junto a los datos ya descritos en las versiones anteriores.   
-   
-El controlador guarda en ficheros algunos datos de manera que puedan ser recuperados cuando los solicite la estación de tierra.  
     
 La estación de tierra muestra al usuario la posición del satélite en cada momento, usando los mapas más adecuados. Además, también guarda en ficheros los datos recibidos y los recupera a petición del usuario. Todo ello debe poder gestionarse de forma cómoda desde la interfaz gráfica de la estación de tierra.   
    
@@ -60,8 +58,18 @@ La estación de tierra muestra al usuario la posición del satélite en cada mom
 La última versión debe incluir todas las funcionalidades adicionales que elija el equipo, en función de su motivación y tiempo disponible. Naturalmente, se esperan funcionalidades espectaculares y sorprendentes.   
    
 En las fechas indicadas en la planificación de la asignatura, cada grupo debe entregar el código correspondiente a la versión que se entrega junto con un vídeo de no más de 3 minutos que muestre que el código satisface los requisitos de la versión que se está entregando.   
+
+### 1.7	Entregas 
+En las fechas indicadas en la planificación de la asignatura, cada grupo debe entregar el código correspondiente a la versión que se entrega junto con un vídeo de no más de 5 minutos que muestre que el código satisface los requisitos de la versión que se está entregando. Las entregas se realizarán en forma de repositorio de GitHub que contenga el código y el enlace al vídeo, que debe estar accesible en internet (en Youtube o Google drive, por ejemplo).  
+
+GitHub y Git son herramientas muy usadas que permiten mantener información (por ejemplo, el código) disponible en la nube, accesible a todos los miembros del equipo y también al público en general (si el repositorio se hace público). Además, permite gestionar cómodamente diferentes versiones de un proyecto, que es justamente lo que se necesita en este proyecto.    
+
+En este vídeo puede encontrarse una explicación de lo esencial para trabajar con Git y GitHub en este proyecto.   
+
+[![](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DI_fQlby426k)](https://www.youtube.com/playlist?list=PLj_C4NVXL2Sgq1N5G1MGbSjsXUIVGZ4S3)
+
    
-### 1.7	Calificación    
+### 1.8	Calificación    
 
 La calificación del proyecto tiene un peso del 40% en la nota final de la asignatura. Esa calificación se obtiene de la siguiente forma:  
 
@@ -200,11 +208,10 @@ El programa es fácil de entender. La función _millis()_ nos da el número de m
   
 Con esta estructura es muy fácil añadir más tareas periódicas a nuestro programa. Por ejemplo, probad a añadir un led verde que se encienda/apague cada 5 segundos.    
 
-AQUÍ ES INTERESANTE QUE EXPERIMENTEN EL PROBLEMA QUE SE PRODUCE CUANDO TIENEN EL PROGRAMA FUNCIONANDO UN RATO DE  MANERA QUE SE DESBORDAN LAS VARIABLES mextMillis, QUE SON DE TIPO int Y DEBERIAN SER DE TIPO unsigned long. AUNQUE INCLUSO EN ESE CASO, SI EL SATELITE VA A ESTAR FUNCIONANDO AÑOS, ACABARÁ DESBORDANDOSE.
-PUEDE SER INTERESANTE QUE OBSERVEN CUÁNTO TARDA EN DESBORDARSE UN INT, PREDECIR CUÁNTO TARDARÍA EN DESBORDARSE UN INSIGNED LONG Y CUAL SERÍA LA SOLUCIÓN DEFNITIVA AL PROBLEMA.    
+Mantened ahora el programa funcionando un rato. Pronto observaréis un comportamiento extraño (los leds se encenderán/apagarán a un ritmo imprevisto). ¿Podéis dar una explicación a lo que está pasando?
 
 ### Paso 3: Comunicación entre Arduino y el portátil
-La placa Arduino está conectada a un puerto USB de tu portátil. Esa es una comunicación serie que utiliza el protocolo UART (Universal Asynchronous Receiver/Transmitter). En el paso X aprenderás más sobre este protocolo, que también se usará para conectar por cable el arduino satélite con el arduino de tierra.  
+La placa Arduino está conectada a un puerto USB de tu portátil. Esa es una comunicación serie que utiliza el protocolo UART (Universal Asynchronous Receiver/Transmitter). En el paso 6 aprenderás más sobre este protocolo, que también se usará para conectar por cable el arduino satélite con el arduino de tierra.  
   
 Esta comunicación serie por cable entre el portátil y la placa Arduino ya se ha estado usando para que el IDE que se ejecuta en tu portátil pueda enviar el código compilado de tu programa a la placa, donde se va a ejecutar. Ahora vamos a aprender a usar ese mismo canal de comunicación para que el programa que se ejecuta en la placa pueda enviar mensajes al IDE de manera que éste pueda mostrarlos al usuario.    
    
@@ -331,11 +338,10 @@ El receptor también va a usar la libreria _SoftwareSerial_. Crea el canal _mySe
  
 La función _mySerial.available()_ indica si se han recibido nuevos bytes por el canal serie. En caso afirmativo se leen todos los bytes hasta el carácter de fin de línea, usando la función _mySerial.readString()_.
 
-Puesto que queremos que la frase recibida se pueda ver el monitor serie del IDE conectado al arduino receptor, el programa usa también el canal _Serial_, tal y como se vio en el paso 3. Fíjate que para escribir en el monitor serie la frase recibida el programa receptor usa la función _Serial.print(data)_ y no _Serial.println(data)_, que es lo que cabría esperar. ¿Por qué?.   
+Puesto que queremos que la frase recibida se pueda ver en el monitor serie del IDE conectado al arduino receptor, el programa usa también el canal _Serial_, tal y como se vio en el paso 3. Fíjate que para escribir en el monitor serie la frase recibida el programa receptor usa la función _Serial.print(data)_ y no _Serial.println(data)_, que es lo que cabría esperar. ¿Por qué?.   
 
 Llegados a este punto, es fácil añadir a los programas del transmisor y del receptor el código necesario para que haya comunicación en ambos sentidos. Por ejemplo, el receptor puede enviar una frase de agradecimiento al transmisor cada vez que recibe un nuevo mensaje. Naturalmente, el transmisor enviará la frase recibida al monitor serie del IDE correspondiente. 
 Preparad esos códigos y probadlos. El resultado puede ser vuestro segundo test unitario que os permitirá verificar, en caso de necesidad, que la comunicación entre los arduinos funciona correctamente. Como es lógico, ahora no tiene sentido hablar de un arduino transmisor y otro receptor puesto que ambos transmiten y reciben.   
-HABLAMOS AQUI YA DE COMO USAR EL CANAL HARDWARE EN VEZ DEL SOFTWARE PARA EVITAR LOS PROBLEMAS QUE VIMOS CUANDO INCORPOREN EL SERVO??
 
 ### Paso 7: Recepción de datos en la interfaz Python
 En el paso anterior hemos visto cómo los datos que envía un Arduino llegan, a través del canal serie, hasta el portátil conectado al segundo Arduino. Los datos llegan hasta el IDE conectado al Arduino receptor y se muestran en el monitor serie correspondiente.   
@@ -354,11 +360,18 @@ while True:
 ```
 El programa identifica el puerto serie que debe usarse (el mismo COM al que está conectado el Arduino receptor). Después configura el canal de comunicación serie, con la velocidad adecuada. Luego entra en un bucle infinito en el que pregunta si se han recibido datos y en caso afirmativo lee toda la frase recibida y la escribe en consola. La lógica del programa es la misma que la del programa que ejecuta el Arduino receptor que se ha visto en el paso anterior.    
  
-Para que este programa funcione es necesario instalar en el intérprete de Python la librería _myserial_.   
+Para que este programa funcione es necesario instalar en el intérprete de Python la librería _myserial_. Esta operación puede resultar problemática. Este vídeo explica brevemente cómo hacerlo y como resolver alguno de los problemas que pueden surgir.    
+
+[![](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdcXdksgJIig)](https://www.youtube.com/watch?v=dcXdksgJIig)
  
 Muy probablemente, al ejecutar el programa se producirá un error porque el programa no puede usar el puerto serie específicado. Eso se produce en el caso de que en ese momento esté activo el monitor serie del IDE conectado al Arduino receptor. Puesto que el puerto serie está ocupado por el monitor serie, el programa en Python no puede usarlo. El problema se resuelve cerrando el monitor serie, con lo cual el puerto serie queda libre para que pueda ser usado por el programa Python.    
  
 Quizá ahora es buena idea añadir algo más de código al test unitario de comunicaciones para verificar también que los datos llegan correctamente al programa e Python.   
+
+En esta pequeña colección de vídeos encontraras ejemplos que te permitirán profundizar un poco más en el tema de la comunicación serie entre los diferentes elementos del sistema.   
+    
+[![](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D2vJmK9jgH4I)](https://www.youtube.com/list=PLj_C4NVXL2ShKV2RqoxJiuFUNpfDq-DB2)
+
  
 ### Paso 8: Presentar los datos de temperatura y humedad al usuario
 Tenemos ya encima de la mesa todos los elementos necesarios para construir un sistema en el que el Arduino satélite capte los datos de temperatura y humedad y los envíe a tierra (por cable) cada 3 segundos, de manera que esos datos aparezcan en la consola del programa en Python para que pueda verlos el usuario. Además, el Arduino satélite debe tener un led verde que se encienda durante un breve instante cada vez que se envían datos y el Arduino de tierra también un led verde que se enciende cada vez que recibe nuevos datos.    
@@ -531,16 +544,18 @@ Llegados a este punto ya podemos dar por concluida la versión 1 del proyecto. L
 
 En el caso de que cada miembro del grupo haya desarrollado su propia versión 1 del proyecto, es el momento de ponerse de acuerdo en cuál será el código con el que trabajará a partir de ahora todo el grupo para desarrollar las versiones siguientes.   
 
-La entrega de la versión 1 tiene dos partes. Por una parte debe entregarse un fichero comprimido con los códigos, que debe incluir:   
+La versión 1 (igual que las siguientes) debe entregarse en forma de repositorio de GitHub que incluya los códigos siguientes:
 
 * El código del Arduino satélite
 * El código del Arduino de tierra
 * El código de la interfaz gráfica
 * En una carpeta adicional: los códigos de los test unitarios que hayais preparado.   
 
-Por otra parte debe entregarse un vídeo de no más de 5 minutos que muestre el correcto funcionamiento del sistema (es decir, todo lo que indica la tabla anterior) y además muestre las partes más relevantes de los tres códigos, con énfasis especial en los códigos que no han sido producto de cortar de esta guía y pegar (por ejemplo, los códigos para incrustar la gráfica en la interfaz gráfica o para implementar las alarmas). Para mostrar el sistema en funcionamiento probablemente tendréis que hacer un vídeo compuesto por una captura de escritorio en la que se vea la aplicación en funcionamiento y otro vídeo sincronizado con este en el que vea el hardware en acción. La forma en entregar el vídeo es colocar la url (de youtube o google drive) correspondiente en el campo Observaciones de la tarea en la que se ha entregado el código.
+Además, en el README del repositorio debe contener el enlace a un vídeo de no más de 5 minutos que muestre el correcto funcionamiento del sistema (es decir, todo lo que indica la tabla anterior) y además muestre las partes más relevantes de los tres códigos, con énfasis especial en los códigos que no han sido producto de cortar de esta guía y pegar (por ejemplo, los códigos para incrustar la gráfica en la interfaz gráfica o para implementar las alarmas). Para mostrar el sistema en funcionamiento probablemente tendréis que hacer un vídeo compuesto por una captura de escritorio en la que se vea la aplicación en funcionamiento y otro vídeo sincronizado con este en el que vea el hardware en acción.   
 
-HACEMOS QUE MANTENGAN UN REPOSITORIO EN GITHUB CON LAS DIFERENTES VERSIONES DEL PROYECTO Y QUE NOS VAYAN ENTREGANDO LA URL?
+Esta versión debe tener un TAG apropiado indicando que se trata de la versión 1. En enlace al repositorio de GitHub con la versión 1 debe colocarse en el campo de observaciones de la entrega correspondiente. Es suficiente con que esta operación la haga uno de los miembros del grupo.
+
+
  
 ## 5. Versión 2
 En la versión 2 vamos a incorporar al sistema un sensor de distancia que nos permitirá detectar la proximidad al satélite de objetos que puedan impactar con él. Además, añadiremos algo de computación para cálculo de medias de temperaturas.   
@@ -551,17 +566,17 @@ La versión 2 del proyecto está mucho menos guiada que la version 1. Además, e
 En la versión 2 (y siguientes) va a aumentar significativamente el número de tipos de mensajes que se intercambian el satélite y la estación de tierra. Por ejemplo, desde el satélite hacia la estación de tierra no solo viajarán los datos de temperatura y humedad sino valores medios de la temperatura o datos de distancia de objetos cercanos al satélite. Por otra parte, desde la estación de tierra al satélite ademas de órdenes para parar o reanudar la transmisión de datos de temperatura también viajarán ordenes para cambiar la periodicidad de los envíos de datos o para cambiar la orientación del sensor de distancias. Se hace necesario, por tanto, definir lo antes posible un sencillo protocolo de aplicación en el que se defina el formato de todos los tipos de mensajes que viajan de un sitio a otro.   
 
 Lo más sencillo es que cada uno de los mensajes que se envían desde el satélite a tierra empiecen por un código que determine el tipo de información que lleva el mensaje. El código puede ser simplemente un número. Un ejemplo podria ser el siguiente:    
-"1:35,4:20"   
-"2:25"
-"3:"
+"1:35,4:20"     
+"2:25"    
+"3:"    
 Los mensajes que empiezan con código "1" contienen un dato de temperatura (35,5 en el ejemplo) y otro de humedad (20), separados por el caracter ':'. Los mensajes que empiezan con código "2" contienen un dato de distancia (25 en el ejemplo). Los mensajes que empiezan por 3 ya no llevan más información e indican que se ha producido un fallo en la captura de datos de temperatura y es necesario activar la alarma correspondiente. A esa lista de tipos de mensajes habrá que ir anadiendo otros nuevos a medida que se vayan necesitando.   
 
 Naturalmente, la estación de tierra que recibirá el mensaje tendrá que usar la función _split_ para trocear el mensaje y determinar el tipo de mensaje recibido a partir del primero de los trozos obtenidos.   
 
-De manera similar es necesario fijar el formato de los mensajes que viajan de la estación de tierra al satélite. Podríamos tener por ejemplo:
-"1:5"
-"2:90"
-"3:"
+De manera similar es necesario fijar el formato de los mensajes que viajan de la estación de tierra al satélite. Podríamos tener por ejemplo:    
+"1:5"    
+"2:90"    
+"3:"    
 Los mensajes con código "1" indican el nuevo periodo para enviar datos de temperatura y humedad (5 segundos). Los que tienen el código "2" indican la nueva orientación que debe tomar el sensor de distancia (90 grados en el ejemplo). Los que tienen el código "3" indican que hay que detener el envío de datos de temperatura. Lógicamente, el programa del Arduino satélite debe trocear también los mensajes recibidos para determinar el tipo de mensaje y actuar en consecuencia. El siguiente trozo de código muestra cómo extraer del mensaje recibido la información que contiene.   
 
 ```
@@ -592,7 +607,7 @@ Se desea, por tanto, que el usuario puede elegir dónde se hace el cálculo de v
 ### 5.3 Sensor de distancia
 El satélite debe estar dotado de un sistema que permita detectar la proximidad de objetos que puedan impactar con él. Para implementar este sistema usaremos el sensor ultrasónico HC-SR04.    
 
-Este sensor emite un sonido ultrasónico por uno de sus transductores y esperar que el sonido rebote de algún objeto presente. El eco es captado por el segundo transductor. La distancia es proporcional al tiempo que tarda en llegar el eco. Os resultara muy fácil encontrar información sobre cómo conectar el sensor al Arduino satélite y cómo capturar por programa los valores que proporciona.   
+Este sensor emite un sonido ultrasónico por uno de sus transductores que impacta en los objetos que encuentre por el camino y rebota, generando un efecto eco. El eco es captado por el segundo transductor. La distancia es proporcional al tiempo que tarda en llegar el eco. Os resultara muy fácil encontrar información sobre cómo conectar el sensor al Arduino satélite y cómo capturar por programa los valores que proporciona.   
 
 Naturalmente el sensor emite el sonido en la dirección en la que está orientado. Para que el sistema sea operativo es necesario que esa orientación pueda cambiar para detectar la proximidad de objetos peligrosos en cualquier dirección. Para conseguir esto montaremos el sensor de ultrasonidos en un servo motor que podemos hacer girar a voluntad por programa. Idealmente, el programa del Arduino satelite hará girar el servo motor de manera constante para conseguir un barrido de toda la zona y captar así la proximidad de objetos en toda la zona barrida. Los datos captados se enviarán a tierra para que puedan mostrarse al usuario.   
 
@@ -605,9 +620,15 @@ Debe incluirse el código necesario para detectar el fallo en el funcionamiento 
 Finalmente, resultará muy útil tener un nuevo test unitario que nos permita verificar el correcto funcionamiento del sensor de distancia.
 
 ### 5.4 Modificación de los periodos de transmisión
-Para completar la versión 2 se desea que desde la interfaz gráfica se pueda cambiar el periodo de transmisión de los datos de temperatura/humedad/medidas. También se desea poder parar/reanudar la transmisión los datos de distancia y modificar su periodo de transmisión.   
+Para completar la versión 2 se desea que desde la interfaz gráfica se pueda cambiar el periodo de transmisión de los datos de temperatura/humedad/medidas. También se desea poder parar/reanudar la transmisión los datos de distancia y modificar su periodo de transmisión.     
 
-### 5.5 Entrega de la versión 2   
+### 5.5 Repaso de la organización del código    
+A estas alturas del proyeto se han desarrollado ya varios bloques de código que probablemente funcionan bien por separado. Pero poner todo junto de manera armniosa y bien organizada no es trivial. es frencuente tener dificultades con esta cuestión. Los vídeos siguientes pueden resultar de ayuda para resolver bien esta cuestión.    
+
+[![](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dgq2KujC6cDA)](https://www.youtube.com/playlist?list=PL64O0POFYjHojLZ-kpEXr9IeXXWZQ-h5H)
+
+
+### 5.6 Entrega de la versión 2   
 La lista siguiente es un resumen de lo que debería estar funcionando en la versión 2.
  
 1. El controlador capta correctamente los datos de humedad, temperatura y distancia.
@@ -626,14 +647,14 @@ La lista siguiente es un resumen de lo que debería estar funcionando en la vers
 14. Se han añadido comentarios clarificadores. En particular, hay comentarios que describen claramente el protocolo de aplicación. Cada función tiene un comentario que describe lo que hace, qué parámetros tiene y qué resultado produce.
 15. Se ha implementado correctamente una cola circular para facilitar el cálculo de la media de los últimos 10 valores de temperatura.
 
-La entrega de la versión 2 tiene dos partes. Por una parte debe entregarse un fichero comprimido con los códigos, que debe incluir:   
+La entrega debe realizarse en forma de nueva versión (con un TAG adecuado) del proyecto en el repositorio GitHub del grupo. En el repositorio deben incluirse:   
 
 * El código del Arduino satélite
 * El código del Arduino de tierra
 * El código de la interfaz gráfica
-* En una carpeta adicional: los códigos de los test unitarios que hayais preparado.   
-
-Por otra parte debe entregarse un vídeo de no más de 5 minutos que muestre el correcto funcionamiento de los elementos del sistema que son novedad en la versión 2 (y, por tanto, no se mostraron en el vídeo de la versión 1). También debe mostrar las partes del código implicadas en las nuevas funcionalidades. 
+* En una carpeta adicional: los códigos de los test unitarios que hayais preparado.
+    
+En el README debe aparecer el enlace al vídeo de no más de 5 minutos que muestre el correcto funcionamiento de los elementos del sistema que son novedad en la versión 2 (y, por tanto, no se mostraron en el vídeo de la versión 1). También debe mostrar las partes del código implicadas en las nuevas funcionalidades. 
 
 ## 6. Versión 3
 Las novedades principales de la versión 3 son: un sistema de detección de errores en la comunicación, el envío por parte del satélite de datos sobre su posición que se mostrarán en una gráfica apropiada, la implementación de un sistema de comunicación inalámbrica entre el satélite y la estación de tierra y la implementación de un sistema de registro de eventos.    
@@ -909,14 +930,14 @@ La lista siguiente es un resumen de lo que debería estar funcionando en la vers
 19. Se han añadido comentarios clarificadores. En particular, hay comentarios que describen claramente el protocolo de aplicación. Cada función tiene un comentario que describe lo que hace, qué parámetros tiene y qué resultado produce.
 20. Se ha implementado correctamente una cola circular para facilitar el cálculo de la media de los últimos 10 valores de temperatura.
 
-Como en los casos anteriores, la entrega de la versión 3 tiene dos partes. Por una parte debe entregarse un fichero comprimido con los códigos, que debe incluir:   
+Como en los casos anteriores, la entrega de se realizará en forma de nueva versión (con el TAG adecuado) del repositorio GitHub, conteniendo los códigos que se indican a continuación:   
 
 * El código del Arduino satélite
 * El código del Arduino de tierra
 * El código de la interfaz gráfica
 * En una carpeta adicional: los códigos de los test unitarios que hayais preparado.   
 
-Por otra parte debe entregarse un vídeo de no más de 5 minutos que muestre el correcto funcionamiento de los elementos del sistema que son novedad en la versión 3 (y, por tanto, no se mostraron en el vídeo de la versión 2). También debe mostrar las partes del código implicadas en las nuevas funcionalidades. 
+y el vídeo de no más de 5 minutos que muestre el correcto funcionamiento de los elementos del sistema que son novedad en la versión 3 (y, por tanto, no se mostraron en el vídeo de la versión 2). El vídeo también debe mostrar las partes del código implicadas en las nuevas funcionalidades. 
 
 
 ## 7. Versión 4 (final)
@@ -1076,9 +1097,12 @@ No te va a resultar difícil porque en vuestro sistema los mensajes que intercam
 Solo hay un punto que ha quedado en el aire. ¿Cómo está segura, por ejemplo, la estación de tierra, de que la clave pública que le han dado es realmente de su satélite y no de un satélite espía? En otras palabras, ¿dónde está la autoridad certificadora en este caso (la que haga el papel que hizo Correos en el caso de la historia de Juan y Maria)? En este caso, la autoridad certificadora podría ser los profesores de la asignatura. Ellos serían los que proporcionarían los juegos de claves públicas y privadas, asegurándose de que entregan esas claves a las personas que son quienes dicen que son. Naturalmente, a los profesores les costaría medio segundo hacer ese programa para generar las claves. No obstante, vamos a obviar ese paso, porque vuestros profesores están muy ocupados revisando las entregas del curso. A menos que estéis dispuestos a pagarles 100 euros por ese servicio, como hicieron María y Juan con Correos. En ese caso, quizá vuestros profesores estén dispuestos a hablar del tema.
 
 ### 7.3 Graficos de posición más realistas
-ESTA POR HACER
+ESTA POR HACER    
 
-### 7.4 Calificación    
+### 7.4 Entrega    
+La entrega se realiza como versión final del repositorio del proyecto del grupo, en las mismas condiciones que las versiones anteriores. No obstante, en esta ocasión el vídeo puede durar algo más de tiempo y debe estar pensado para impresionar a una audiencia más general (no solo a los profesores). Por tanto, es una ocasión para mostrar en ese vídeo capacidades comunicativas y creativas, que también se tendrán en cuenta para determinar la calificación del proyecto.    
+   
+### 7.5 Calificación    
 La versión final si que tiene una calificación (la misma para todos los miembros del equipo) que se determinará a partir de los criterios siguientes:    
    
 | Criterio  | Descripción | Peso |
@@ -1089,6 +1113,6 @@ La versión final si que tiene una calificación (la misma para todos los miembr
 | Organizado y documentado	 |El código del controlador y de la estación de tierra está bien organizado en funciones. Además, se han añadido comentarios adecuados que deben permitir a otras personas, con poco esfuerzo, entender el código y hacer modificaciones si son necesarias	  |10% |
 | Eficiente |El código usa siempre los algoritmos más adecuados para realizar las operaciones  |5% |
 | Sorprendente |Las funcionalidades adicionales son interesantes, complejas y sorprendentes.	  |20% |
-| Bien presentado	 |El vídeo que acompaña a la versión final presenta claramente el funcionamiento del sistema y resulta espectacular  |10% |
+| Bien presentado	 |El vídeo que acompaña a la versión final presenta claramente el funcionamiento del sistema y resulta espectacular. El proyecto está bien presentado en el GitHub con información del equipo, una breve descripción de lo que hay en cada una de las 4 versiones y el enlace al vídeo de cada una de ellas.  |10% |
 | TOTAL |  |100% |
 
