@@ -896,10 +896,17 @@ La solución a nivel de protocolo de transporte es hacer que el propio chip de c
 
 La solución hardware implica modificar la frecuencia de transmisión de la comunicacion, de manera que sea diferente a las del resto de transmisiones LoRa que haya alrededor. De esta forma, solo entran en el chip los mensajes con la frecuencia correspondiente, con los que el chip ya no tiene que hacer trabajo de decodificación. Esta es, por tanto, la mejor solución, pero requiere de un acuerdo entre todos los grupos de proyecto para que cada grupo tenga asignada una frecuencia de trasmisión diferente.  
 
-Tanto la solución a nivel de protocolo de trasporte como la solución hardware requiere modificar algunos parámetros del chip LoRa (para indicarle el identificador que debe usar o la frecuencia a la que debe trasmitir).   
+Tanto la solución a nivel de protocolo de trasporte como la solución hardware requiere modificar algunos parámetros del chip LoRa (para indicarle el identificador que debe usar o la frecuencia a la que debe trasmitir). Para ello usaremos el adaptador USB-C que nos permite conectar el chip LoRa a un puerto USB de nuestro portátil. La figura siguiente muestra cómo hacer las conexiones entre el chip LoRa y el adaptador USB-C.   
  
-  
- 
+ <img width="638" height="634" alt="image" src="https://github.com/user-attachments/assets/28b6777a-070d-4989-a8f3-fbec3443206d" />
+
+Ahora podemos usar el programa DRF TOOL para acceder a la configuración del chip LoRa. El programa puede descargarse aquí:    
+https://www.instructables.com/Make-Lora-Node-and-Lora-Gateway-by-Using-DORJI-DRF/    
+
+ El siguiente gif muestra cómo usarlo para cambiar la configuración del chip LoRa (naturalmente los cambios hay que hacerlos en los dos chips).   
+
+ ![2025-12-03 09-09-08](https://github.com/user-attachments/assets/80995e3c-7541-4da8-913e-f43ce5075f0c)
+
 ### 6.4 Registro de eventos
 El sistema debe mantener un registro de eventos que pueda ser consultado fácilmente por el usuario. Deben considerarse al menos tres tipos de eventos:   
  
