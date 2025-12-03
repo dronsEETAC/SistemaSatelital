@@ -883,6 +883,9 @@ La comunicación usando LoRa también es una comunicación serie que utiliza el 
 
 El transmisor/receptor LoRa debe conectarse al Arduino tal y como muestra la figura.    
 
+<img width="2000" height="700" alt="image" src="https://github.com/user-attachments/assets/6081e41a-125e-4cbd-8b2d-07e0c8486f33" />
+
+
 <img width="2000" height="699" alt="image" src="https://github.com/user-attachments/assets/bf12a7e3-d35f-48d7-836f-a31fe63ab8df" />
 
 
