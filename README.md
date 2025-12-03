@@ -883,7 +883,8 @@ La comunicación usando LoRa también es una comunicación serie que utiliza el 
 
 El transmisor/receptor LoRa debe conectarse al Arduino tal y como muestra la figura.    
 
-<img  src="https://github.com/user-attachments/assets/fa49ade5-4acd-49a0-89ca-db71a19a6d10" width="400" height="150"/>   
+<img width="2000" height="699" alt="image" src="https://github.com/user-attachments/assets/bf12a7e3-d35f-48d7-836f-a31fe63ab8df" />
+
 
 Como puede observarse, el pin 5 de LoRa (TXD) debe conectarse al pin 10 de Arduino (el RX del canal de comunicación). Por otra parte, el pin 4 de LoRa (RXD) debe conectarse a un divisor de tensión que a su vez se conecta al pin 11 de Arduino (TX del canal de comunicación). Esto se debe a que el chip LoRa trabaja con un voltaje de 3.3V (Arduino trabaja con 5V). Que Arduino reciba por RX la señal de solo 3.3V que le envía LoRa no es problema porque Arduino puede interpretarla bien. Pero que LoRa reciba por RXD una señal de 5V del TX de Arduino puede causar un mal funcionamiento del chip. Por eso, la señal  TX de Arduino (pin 11) se pasa por el divisor de tensión que hace que esos 5V se reduzcan en una tercera parte, de manera que lo que llega a LoRa es aproximandamente esos 3.3V que necesita.   
 
