@@ -886,9 +886,6 @@ El transmisor/receptor LoRa debe conectarse al Arduino tal y como muestra la fig
 <img width="2000" height="700" alt="image" src="https://github.com/user-attachments/assets/6081e41a-125e-4cbd-8b2d-07e0c8486f33" />
 
 
-<img width="2000" height="699" alt="image" src="https://github.com/user-attachments/assets/bf12a7e3-d35f-48d7-836f-a31fe63ab8df" />
-
-
 Como puede observarse, el pin 5 de LoRa (TXD) debe conectarse al pin 10 de Arduino (el RX del canal de comunicación). Por otra parte, el pin 4 de LoRa (RXD) debe conectarse a un divisor de tensión que a su vez se conecta al pin 11 de Arduino (TX del canal de comunicación). Esto se debe a que el chip LoRa trabaja con un voltaje de 3.3V (Arduino trabaja con 5V). Que Arduino reciba por RX la señal de solo 3.3V que le envía LoRa no es problema porque Arduino puede interpretarla bien. Pero que LoRa reciba por RXD una señal de 5V del TX de Arduino puede causar un mal funcionamiento del chip. Por eso, la señal  TX de Arduino (pin 11) se pasa por el divisor de tensión que hace que esos 5V se reduzcan en una tercera parte, de manera que lo que llega a LoRa es aproximandamente esos 3.3V que necesita.   
 
 Conectando los chips LoRa de la forma indicada en ambos Arduinos las comunicaciones deberían funcionar sin problema y sin cambiar nada en el código. No obstante, en el caso de que haya varios sistemas funcionando simultáneamente (por ejemplo, varios grupos probando las comunicaciones inalámbricas al mismo tiempo) pueden producirse interferencias en las comunicaciones, es decir, que la estación de tierra de un grupo reciba los mensajes que envía el satélite de otro grupo. Esto es lógico porque los equipos LoRa de ambos grupos trabajan en el mismo rango de frecuencias. Este problema puede resolverse a varios niveles: a nivel de protocolo de aplicación, a  nivel de protocolo de transporte y a nivel hardware.   
