@@ -25,9 +25,11 @@ La aplicación que se ejecuta en el portátil está programada en Python. Debe t
 La comunicación entre la estación de tierra y el satélite utiliza la tecnología LoRa (Long Range). Se trata de una tecnología de comunicación inalámbrica (como también lo son WiFi y Bluetooth), que es especialmente adecuada para comunicaciones a grandes distancias. No obstante, durante buena parte del desarrollo del proyecto, por cuestiones de comodidad y evitación de interferencias, la comunicación se realizará mediante cable.  
    
 ### 1.5	Demostración   
-El siguiente vídeo es un ejemplo del resultado final en funcionamiento, elaborado por alumnos de cursos anteriores.    
+Los siguientes vídeos son dos ejemplos del resultado final en funcionamiento, elaborados por alumnos de cursos anteriores.    
    
-[![](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DnBh4BNyI6vw)](https://www.youtube.com/watch?v=nBh4BNyI6vw)
+[![](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DnBh4BNyI6vw)](https://www.youtube.com/watch?v=nBh4BNyI6vw)   
+
+[![](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D6ODh15rp7SE)](https://www.youtube.com/watch?v=6ODh15rp7SE)
    
 ### 1.6	Versiones
 Deben implementarse cuatro versiones del sistema satelital, de complejidad creciente. Las características esenciales de cada versión se describen a continuación, aunque los requerimientos precisos se describen en próximos apartados de esta guía y las fechas de entrega se especificarán en el plan de la asignatura.  
@@ -56,11 +58,10 @@ La estación de tierra muestra al usuario la posición del satélite en cada mom
 <ins>Versión 4</ins>     
    
 La última versión debe incluir todas las funcionalidades adicionales que elija el equipo, en función de su motivación y tiempo disponible. Naturalmente, se esperan funcionalidades espectaculares y sorprendentes.   
-   
-En las fechas indicadas en la planificación de la asignatura, cada grupo debe entregar el código correspondiente a la versión que se entrega junto con un vídeo de no más de 3 minutos que muestre que el código satisface los requisitos de la versión que se está entregando.   
+      
 
 ### 1.7	Entregas 
-En las fechas indicadas en la planificación de la asignatura, cada grupo debe entregar el código correspondiente a la versión que se entrega junto con un vídeo de no más de 5 minutos que muestre que el código satisface los requisitos de la versión que se está entregando. Las entregas se realizarán en forma de repositorio de GitHub que contenga el código y el enlace al vídeo, que debe estar accesible en internet (en Youtube o Google drive, por ejemplo).  
+En las fechas indicadas en la planificación de la asignatura, cada grupo debe entregar el código correspondiente a la versión que se entrega junto con un vídeo de no más de 5 minutos que muestre que el código satisface los requisitos de la versión que se está entregando. Las entregas se realizarán en forma de repositorio de GitHub que contenga el código, el enlace al vídeo, que debe estar accesible en internet (en Youtube o Google drive, por ejemplo) y un README.md con información sobre la entrega realizada.  
 
 GitHub y Git son herramientas muy usadas que permiten mantener información (por ejemplo, el código) disponible en la nube, accesible a todos los miembros del equipo y también al público en general (si el repositorio se hace público). Además, permite gestionar cómodamente diferentes versiones de un proyecto, que es justamente lo que se necesita en este proyecto.    
 
@@ -68,8 +69,22 @@ En este vídeo puede encontrarse una explicación de lo esencial para trabajar c
 
 [![](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DI_fQlby426k)](https://www.youtube.com/playlist?list=PLj_C4NVXL2Sgq1N5G1MGbSjsXUIVGZ4S3)
 
+### 1.8  Uso de herramientas de Inteligencia Artificial   
+
+Estas herramientas serán de gran ayuda para la realización del proyecto, porque permitirán avanzar más rápido y obtener resultados más ambiciosos y espectaculares. Sin embargo, hay que tener siempre bien presente que el objetivo principal del trabajo a realizar es aprender. La IA puede usarse para resolver el reto sin haber aprendido gran cosa por el camino. Los profesores de la asignatura tomarán las medidas adecuadas para que esto no ocurra. Esencialmente debe tenerse en cuenta lo siguiente:
+1. Los profesores sospecharán que se está haciendo un mal uso de la IA si pudiendo resolver la tarea usando las estructuras algoritmicas vistas en clase o descritas en los materiales del curso, se resuelve usando estructuras alternativas. Si eso ocurre se pedirán explicaciones al grupo para verificar que se ha producido el aprendizaje esperado.
+2. En el caso de las funcionalidades adicionales que se incorporen a la versión final, sí que se permitirá el uso de cualquier estructura algorítmica que no se haya visto en clase, incluso si algún miembro del equipo no puede explicar con claridad esa parte del código.
+3. En el README.md de cada versión debe haber un apartado titulado: Declaración de uso de IA. En ese apartado el equipo debe describir cómo ha usado la IA durante la realización de esa versión del proyecto y explicar claramente qué ha aprendido gracias a la IA.
+
+### 1.9  Seguimiento del proyecto   
+
+En las sesiones de clase se dedicará una buena parte del tiempo al trabajo en el proyecto, bajo la supervisión de los profesores. Con mucha frecuencia en esos periodos cada equipo tendrá una entrevista de pocos minutos con uno de los profesores. En esa entrevista los profesores verificarán:
+1. Si se han producido los avances que se habían previsto en la entrevista anterior
+2. Que todos los miembros del equipo han contribuido razonablemente al progreso del proyecto
+3. Que cada uno de los miembros del equipo puede explicar con suficiente claridad el código del proyecto, especialmente aquellas partes que se han desarrollado con ayuda de la IA
+En esas entrevistas frecuentes los profesores obtendrán una información valiosa que tendrén en cuenta en la calificación.
    
-### 1.8	Calificación    
+### 1.10	Calificación    
 
 La calificación del proyecto tiene un peso del 40% en la nota final de la asignatura. Esa calificación se obtiene de la siguiente forma:  
 
