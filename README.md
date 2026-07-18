@@ -88,7 +88,8 @@ En esas entrevistas frecuentes los profesores obtendrán una información valios
 
 La calificación del proyecto tiene un peso del 40% en la nota final de la asignatura. Esa calificación se obtiene de la siguiente forma:  
 
-•	Calidad del producto final: 30%   
+•	Calidad del producto final: 20%   
+•	Seguimiento del proyecto: 10%   
 •	Resultados individuales de los exámenes de conocimiento del proyecto: 5%   
 •	Resultados grupales de los exámenes de conocimiento del proyecto: 5%   
    
@@ -105,7 +106,8 @@ La calidad del producto final se valorará utilizando los criterios que se indic
 | Bien presentado	 |El vídeo que acompaña a la versión final presenta claramente el funcionamiento del sistema y resulta espectacular  |10% |
 | TOTAL |  |100% |
 
-
+La calificación de seguimiento del proyecto se determinará en función de los resultados de las numerosas entrevistas que tendrán los profesores con cada grupo durante las sesiones de clase, en las que se verificará el correcto avance del trabajo y la adecuada asimilación de los conceptos implicados en el proyecto.   
+ 
 Durante el curso se realizarán dos exámenes de conocimientos del proyecto, coincidiendo con la entrega de dos de las versiones antes descritas. Estos exámenes son individuales y se realizan en clase. Consisten en la realización, en el tiempo indicado, de una sencilla modificación del código del sistema desarrollado por el grupo. Un ejemplo de enunciado de un examen de conocimiento de proyecto puede ser este:   
  
 _Añade a la interfaz gráfica de la estación de tierra un botón que haga que los datos de humedad se envíen cada segundo.
