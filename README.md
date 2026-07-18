@@ -103,7 +103,7 @@ La calidad del producto final se valorará utilizando los criterios que se indic
 | Organizado y documentado	 |El código del controlador y de la estación de tierra está bien organizado en funciones. Además, se han añadido comentarios adecuados que deben permitir a otras personas, con poco esfuerzo, entender el código y hacer modificaciones si son necesarias	  |10% |
 | Eficiente |El código usa siempre los algoritmos más adecuados para realizar las operaciones  |5% |
 | Sorprendente |Las funcionalidades adicionales son interesantes, complejas y sorprendentes.	  |20% |
-| Bien presentado	 |El vídeo que acompaña a la versión final presenta claramente el funcionamiento del sistema y resulta espectacular  |10% |
+| Bien presentado	 |El repositorio del proyecto e GitHub está bien organizado y documentado. El vídeo que acompaña a la versión final presenta claramente el funcionamiento del sistema y resulta espectacular.  |10% |
 | TOTAL |  |100% |
 
 La calificación de seguimiento del proyecto se determinará en función de los resultados de las numerosas entrevistas que tendrán los profesores con cada grupo durante las sesiones de clase, en las que se verificará el correcto avance del trabajo y la adecuada asimilación de los conceptos implicados en el proyecto.   
